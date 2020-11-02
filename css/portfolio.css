@@ -1,0 +1,89 @@
+/* Стилизация портфолио */
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.portfolio-container .portfolio-list {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.portfolio-list .item {
+  margin-left: 8px;
+}
+
+.portfolio-container .card-set-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.card-set-list .item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+  /* outline: 1px solid #eeeeee; */
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.portfolio .discription {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 22px;
+  min-width: 73px;
+  border-color: transparent;
+  border-radius: 4px;
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  background-color: var(--third-bgc);
+  color: var(--title-text-color);
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+/* Стилизация подвала  */
+.footer {
+  background-color: #2f303a;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.logo-footer {
+  color: var(--white);
+}
+.footer-contacts p {
+  font-style: normal;
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-contacts a {
+  font-style: normal;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
