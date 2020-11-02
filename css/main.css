@@ -8,14 +8,16 @@
 }
 
 /* Стилизурет фон Героя */
+
 .overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img-hw-4/overlay.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img-hw-4/overlay.jpg);
 }
 
 .hero .container {
@@ -67,6 +69,30 @@
 
 .features .list {
   display: flex;
+}
+
+.features-list .item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--third-bgc);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background: url(../img-hw-4/antenna.svg);
+}
+.icon-clock::before {
+  background: url(../img-hw-4/clock.svg);
+}
+.icon-diagram::before {
+  background: url(../img-hw-4/diagram.svg);
+}
+.icon-astronaut::before {
+  background: url(../img-hw-4/astronaut.svg);
 }
 
 .features .title {
