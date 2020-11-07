@@ -16,6 +16,7 @@
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img-hw-4/overlay.jpg);
 }
@@ -41,9 +42,9 @@
   display: inline-block;
   outline: transparent;
   /* padding: 10px 32px; аналогично написаному ниже*/
+  padding-top: 10px;
   padding-left: 32px;
   padding-right: 32px;
-  padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 4px;
   min-width: 200px;
@@ -200,5 +201,40 @@
   line-height: 1.18;
 
   text-align: center;
+  margin-bottom: 16px;
+}
+
+.team-container .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-right: 32px;
+  margin-left: 32px;
   margin-bottom: 30px;
+}
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons-svg {
+  height: 20px;
+  width: 20px;
+  fill: var(--social-icons);
+}
+
+.social-icons-link {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 44px;
+  width: 44px;
+  background-color: var(--main-bgc);
+  border-radius: 50%;
+}
+
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+  background-color: greenyellow;
+  fill: white;
 }
