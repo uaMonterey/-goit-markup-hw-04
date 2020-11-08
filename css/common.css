@@ -138,7 +138,25 @@ body {
 
 /* Шапка */
 
-.page-header .link {
+.info-link {
+  display: flex;
+  align-items: center;
+  color: var(--main-text-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.info-link:hover,
+.info-link:focus {
+  color: var(--accent);
+}
+
+.icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.page-header .link {s
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -214,6 +232,10 @@ body {
   margin-left: 50px;
 }
 
+page-header .info-link {
+  display: flex;
+}
+
 /* Стилизация подвала  */
 
 .footer {
@@ -257,3 +279,4 @@ body {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
+

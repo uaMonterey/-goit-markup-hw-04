@@ -253,8 +253,8 @@
   border: 1px solid var(--accent);
 }
 
-.clients-icons-svg:hover,
-.clients-icons-svg:focus {
+.clients-item-link:hover .clients-icons-svg,
+.clients-item-link:focus .clients-icons-svg {
   fill: var(--accent);
 }
 
@@ -304,3 +304,30 @@
 .footer .social-icons-link:focus {
   background: var(--accent);
 }
+
+/*ОСТОРОЖНО КОСТЫЛЬ!!!!!!*/
+
+.page-header .info-link {
+  display: flex;
+}
+/* .page-header .info-link {
+  display: flex;
+}
+
+.info-link {
+  display: flex;
+  align-items: center;
+  color: var(--main-text-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.info-link:hover,
+.info-link:focus {
+  color: var(--accent);
+}
+
+.icon {
+  margin-right: 10px;
+  fill: currentColor;
+} */
