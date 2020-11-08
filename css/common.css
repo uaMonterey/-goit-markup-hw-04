@@ -156,7 +156,7 @@ body {
   fill: currentColor;
 }
 
-.page-header .link {s
+.page-header .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -232,8 +232,36 @@ body {
   margin-left: 50px;
 }
 
-page-header .info-link {
+/* ??????????????????? */
+.page-header .info-link {
   display: flex;
+}
+
+/*Иконки соц сетей*/
+
+.social-icons-svg {
+  height: 20px;
+  width: 20px;
+  fill: var(--svg-icons);
+}
+
+.social-icons-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent);
+}
+
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+  fill: white;
 }
 
 /* Стилизация подвала  */
@@ -252,6 +280,7 @@ page-header .info-link {
   display: inline-block;
   margin-bottom: 20px;
 }
+
 .logo-footer {
   color: var(--white);
 }
@@ -260,14 +289,17 @@ page-header .info-link {
   display: flex;
   flex-direction: column;
 }
+
 .footer-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .footer-list .item:not(:last-child) {
   margin-bottom: 9px;
 }
+
 .footer-list p {
   font-style: normal;
   text-decoration: none;
@@ -280,3 +312,52 @@ page-header .info-link {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/*---див с соц сетями---*/
+
+.footer-container {
+  display: flex;
+}
+
+.footer-social-links {
+  padding-top: 12px;
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+
+.footer-title-join-us {
+  margin-bottom: 20px;
+
+  width: 145px;
+  height: 16px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white);
+}
+
+.footer-icons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .social-icons-link {
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+}
+
+.footer .social-icons-svg {
+  fill: var(--white);
+}
+
+.footer .social-icons-link:hover,
+.footer .social-icons-link:focus {
+  background: var(--accent);
+}

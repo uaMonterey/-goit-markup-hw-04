@@ -73,30 +73,5 @@
   line-height: 1.88;
 }
 
-/* Стилизация подвала  */
-.footer {
-  background-color: #2f303a;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
-.logo-footer {
-  color: var(--white);
-}
-.footer-contacts p {
-  font-style: normal;
-  text-decoration: none;
-  color: #ffffff;
-}
-.footer-contacts a {
-  font-style: normal;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/*ОСТОРОЖНО КОСТЫЛЬ!!!!!!*/
-
-.page-header .info-link {
-  display: flex;
-}
+/* Стилизация подвала 
+   находится в common.css  */
