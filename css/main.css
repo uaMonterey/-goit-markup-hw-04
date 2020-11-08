@@ -60,6 +60,12 @@
 }
 
 .title {
+  text-align: center;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -146,7 +152,6 @@
 
 .works .item {
   margin-left: 30px;
-  margin-top: 50px;
   flex-basis: calc(100% / 3 - 30px);
 }
 
@@ -154,20 +159,6 @@
 
 .team {
   background-color: var(--third-bgc);
-}
-
-.team-title {
-  text-align: center;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--title-text-color);
 }
 
 .team-list {
@@ -210,10 +201,14 @@
   justify-content: space-between;
 }
 
+.team-container .team-content {
+  padding: 30px 32px;
+}
+
 .social-icons-svg {
   height: 20px;
   width: 20px;
-  fill: var(--social-icons);
+  fill: var(--svg-icons);
 }
 
 .social-icons-link {
@@ -225,13 +220,87 @@
   border-radius: 50%;
 }
 
-.social-icons-link:hover {
+.social-icons-link:hover,
+.social-icons-link:focus {
   background-color: var(--accent);
 }
-.social-icons-link:hover .social-icons-svg {
+
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
   fill: white;
 }
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-item-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
 
-.team-container .team-content {
-  padding: 30px;
+.clients-icons-svg {
+  fill: var(--svg-icons);
+}
+
+.clients-item-link:hover,
+.clients-item-link:focus {
+  border: 1px solid var(--accent);
+}
+
+.clients-icons-svg:hover,
+.clients-icons-svg:focus {
+  fill: var(--accent);
+}
+
+.footer-container {
+  display: flex;
+}
+.footer-social-links {
+  padding-top: 12px;
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+.footer-follow {
+  margin-bottom: 20px;
+
+  width: 145px;
+  height: 16px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  /* background-color: green; */
+  color: var(--white);
+}
+
+.footer-icons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+}
+
+.footer .social-icons-link {
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+}
+.footer .social-icons-svg {
+  fill: var(--white);
+}
+
+.footer .social-icons-link:hover,
+.footer .social-icons-link:focus {
+  background: var(--accent);
 }
