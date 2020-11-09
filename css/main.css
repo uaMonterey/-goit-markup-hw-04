@@ -59,19 +59,6 @@
   color: var(--white);
 }
 
-.title {
-  text-align: center;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--title-text-color);
-}
-
 /* Стилизация секции Особенности  */
 
 .features .list {
@@ -219,6 +206,9 @@
 .clients-list {
   display: flex;
   justify-content: space-between;
+}
+.clients-title {
+  text-align: center;
 }
 .clients-item-link {
   display: inline-flex;
